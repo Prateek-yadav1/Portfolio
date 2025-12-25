@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937; /* Dark background */
+  border-radius: 8px;
+}
+
+/* Utility for smooth animation */
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
