@@ -50,8 +50,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden py-16">
-      {/* Animated background elements */}
+<section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden pt-24 md:pt-16">      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Gradient orbs */}
         <div 
@@ -82,10 +81,10 @@ export default function Hero() {
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         
         {/* Floating particles */}
-        {[...Array(5)].map((_, i) => (
+        {[...Array(100)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-blue-700 rounded-full animate-float"
+            className="absolute w-1 h-1 bg-blue-900 rounded-full animate-float"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,

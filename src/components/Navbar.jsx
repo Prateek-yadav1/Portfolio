@@ -20,7 +20,7 @@ export default function Navbar() {
 
       // Detect active section
       const sections = navItems.map(item => document.querySelector(item.href)).filter(Boolean);
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY+100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
